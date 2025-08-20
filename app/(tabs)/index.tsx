@@ -1,15 +1,18 @@
-import { Text, View } from "react-native";
+import { Text, StyleSheet } from "react-native";
+import { ThemedView } from "@/components/ThemedView";
 
 export default function HomeScreen() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Display notes that have been written</Text>
-    </View>
+    <ThemedView style={styles.container}>
+      
+    </ThemedView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+})
